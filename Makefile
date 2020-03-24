@@ -4,9 +4,6 @@ install:
 
 
 
-test:
-
-	poetry run pytest brain_games tests
 
 
 
