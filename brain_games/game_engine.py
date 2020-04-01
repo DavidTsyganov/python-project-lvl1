@@ -1,33 +1,28 @@
-import brain_games.cli
+import brain_games.games.cli
 import prompt
-rounds = 3
 
 
-def game_begin():
-    greetings = 'Welcome to the Brain games!'
-    print(greetings)
-   # print(game_name.describer)
-    name = brain_games.cli.welcome_user()
+def start_game(name_game):
+    print(name_game.describer)
+    counter = 1
+    name = brain_games.games.cli.welcome_user()
 
-counter = 1
-while counter <= rounds:
-  # answer # gmxpr = game_name.logic_game()
-   question = 'Question: ' #:+ gmxpr
+    while counter <= 3:
+        result,gmxpr = name_game.logic_game()
+        question = 'Question :' + gmxpr
 
-print(question)
-rspons = prompt.string('Your answer: ')
+        print(question)
+        response = prompt.string('Your answer: ')
 
-if rspons == answer:
-    if counter == rounds:
-        print('Correct!')
-        print('Congratilations, {}!'.format(name))
-        break
-    else:
-        print('Correct')
-        counter +=1
+        if response == result:
+            print('Correct!')
+            counter += 1 
+            if counter > 3:
+                print("Congratulations, {}!".format(name))
 
-        # else:
-         #    error_out = "'{}' is wrong answer ; (. ".format(rspons)
-          #   correct_out = "Correct answer was '{}'.".format(answer)
-           #  print(error_out + correct_out)
-            # print("Let's try again, {}!".format(name))
+        else:
+            error_output = "'{}' is wrong answer :(. ".format(response)
+            correct_output = "Correct answer was '{}'.".format(result)
+            print(error_output + correct_output)
+            print("Let's try again, {}!".format(name))
+            counter += 3

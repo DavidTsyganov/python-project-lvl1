@@ -7,4 +7,3 @@ def welcome_user():
     print('Hello, {}!'.format(name))
     print()
     return name
-welcome_user()

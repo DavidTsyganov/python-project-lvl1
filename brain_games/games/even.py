@@ -1,16 +1,16 @@
 from random import randint
 
-describer= 'Answer "yes" if number even otherwise answer "no".'
+describer = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def even_game():
-    count1 = randint(1,100)
+def logic_game():
+    count1 = randint(1, 99)
 
     if count1 % 2 == 0:
-        answer = 'yes'
+        result = 'yes'
     else:
-        answer = 'no'
+        result = 'no'
 
     gmxpr = '{}'.format(count1)
 
-    return answer, gmxpr, count1
+    return result,gmxpr
