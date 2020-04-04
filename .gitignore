@@ -3,3 +3,4 @@ __pycache
 dist/
 *.pyc
 .venv/
+.Makefile.swp

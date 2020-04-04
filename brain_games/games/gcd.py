@@ -15,6 +15,5 @@ def logic_game():
             result = str(devisor)
         devisor += 1
     gmxpr = "{} {}".format(number1, number2)
-    question = 'Question: ' + gmxpr
 
-    return result, question
+    return result, gmxpr

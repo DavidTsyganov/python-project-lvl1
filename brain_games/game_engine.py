@@ -1,11 +1,17 @@
-import brain_games.games.cli
 import prompt
+
+def welcome_user():
+    print()
+    name = prompt.string('May I have your name?')
+    print('Hello, {}!'.format(name))
+    print()
+    return name
 
 
 def start_game(name_game):
     print(name_game.describer)
     counter = 1
-    name = brain_games.games.cli.welcome_user()
+    name = welcome_user()
 
     while counter <= 3:
         result,gmxpr = name_game.logic_game()
