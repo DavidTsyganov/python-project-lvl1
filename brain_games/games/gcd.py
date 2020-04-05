@@ -6,14 +6,11 @@ describer = 'Find the greatest common divisor of given numbers.'
 def logic_game():
     number1 = randint(1, 99)
     number2 = randint(1, 99)
-    min_number = min(number1, number2)
-    max_number = max(number1, number2)
-
-    devisor = 1
-    while devisor <= min_number:
-        if min_number % devisor == 0 and max_number % devisor == 0:
-            result = str(devisor)
-        devisor += 1
-    gmxpr = "{} {}".format(number1, number2)
-
-    return result, gmxpr
+    great_div = min(number1, number2)
+    gmxpr = ('{} {}'.format(number1, number2))
+    while great_div > 0:
+        if number1 % great_div == 0 and number2 % great_div == 0:
+            result = str(great_div)
+            return result, gmxpr
+        else: 
+            great_div -= 1
