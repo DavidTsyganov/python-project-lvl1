@@ -10,7 +10,7 @@ def logic_game():
     counter = 0
     progression = ''
 
-    while counter <= 10:
+    while counter < 10:
         curnumber = number1 + (counter * step)
 
         if counter == hidden_number:
