@@ -4,16 +4,16 @@ describer = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    divider = int(math.sqrt(number)) + 1
-    for num in range(2, divider):
-        if not number % num:
-            return False
+    prime = number - 1
+    while number % prime != 0:
+        prime -= 1
+    if prime == 1:
         return True
-
+    return False
 
 def logic_game():
-    number = random.randint(1, 1000)
+    number = random.randint(1, 100)
     gmxpr = '{}'.format(number)
     result = 'yes' if is_prime(number) else 'no'
 
-    return result, gmxpr
+    return gmxpr, result

@@ -9,4 +9,4 @@ def logic_game():
     quest = randint(1,99)
     result = 'yes' if is_even(quest) else 'no'
     gmxpr = ' {}'.format(quest)
-    return result,gmxpr
+    return gmxpr, result

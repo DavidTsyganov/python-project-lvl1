@@ -9,5 +9,5 @@ def logic_game():
     great_div = math.gcd(number1, number2)
     gmxpr = ('{} {}'.format(number1, number2))
     result = str(great_div)
-    return result, gmxpr
+    return gmxpr, result
     

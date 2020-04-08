@@ -24,4 +24,4 @@ def logic_game():
 
     gmxpr = '{}'.format(progression)
 
-    return result, gmxpr
+    return gmxpr, result

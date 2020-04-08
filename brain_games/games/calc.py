@@ -13,4 +13,4 @@ def logic_game():
     number2 = random.randint(1,99)
     result = str(operation(number1, number2))
     gmxpr = '{0} {1} {2}'.format(number1, symbol, number2)
-    return result, gmxpr
+    return gmxpr, result
