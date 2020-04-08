@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Ganeshahere/python-project-lvl1.svg?branch=master)](https://travis-ci.org/Ganeshahere/python-project-lvl1)
 ## First Hexlet.io Python course project, pack of interesting games for terminal fun, also little warm-up for your brain ##
 ## Installation: ##
-    pip install -i https://test.pypi.org/simple/ ganeshahere-brain-games-v2
+    pip install -i https://test.pypi.org/simple/ ganeshahere-brain-games
 ## Description ##
 All games last three rounds, in each round you will have some questions that you need to answer
 If you answer all the questions correctly, games will congratulate you
