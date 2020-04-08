@@ -13,10 +13,10 @@ def welcome_user():
 
 def start_game(name_game):
     print(name_game.describer)
-    counter = 1
+    counter = 0
     name = welcome_user()
 
-    while counter <= 3:
+    while counter != 3:
         result,gmxpr = name_game.logic_game()
         question = 'Question :' + gmxpr
 
@@ -26,7 +26,7 @@ def start_game(name_game):
         if response == result:
             print('Correct!')
             counter += 1 
-            if counter > 3:
+            if counter == 3:
                 print("Congratulations, {}!".format(name))
 
         else:
