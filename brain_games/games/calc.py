@@ -1,23 +1,16 @@
-from random import randint, choice
+import random, operator
 
 describer = 'What is the result of the expression?'
 
-
+operators = (
+        ('+', operator.add),
+        ('-', operator.sub),
+        ('*', operator.mul),
+    )
 def logic_game():
-    number1 = randint(1, 99)
-    number2 = randint(1,99)
-    doing = choice('+-*')
-
-    if doing == '+':
-        result = str(number1 + number2)
-    elif doing == '-':
-        if number1 < number2:
-            result = str(number2 - number1)
-        else:
-            result = str(number1 - number2)
-    else:
-        result = str(number1 * number2)
-
-    gmxpr = str(number1) + " {} ".format(doing) + str(number2)
-
+    symbol, operation = random.choice(operators)
+    number1 = random.randint(1, 99)
+    number2 = random.randint(1,99)
+    result = str(operation(number1, number2))
+    gmxpr = '{0} {1} {2}'.format(number1, symbol, number2)
     return result, gmxpr
