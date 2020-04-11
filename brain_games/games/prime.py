@@ -13,7 +13,7 @@ def is_prime(number):
 
 def logic_game():
     number = random.randint(1, 100)
-    gmxpr = '{}'.format(number)
+    expression = '{}'.format(number)
     result = 'yes' if is_prime(number) else 'no'
 
-    return gmxpr, result
+    return expression, result

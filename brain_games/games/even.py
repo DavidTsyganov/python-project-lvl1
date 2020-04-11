@@ -8,5 +8,5 @@ def is_even(number):
 def logic_game():
     quest = randint(1,99)
     result = 'yes' if is_even(quest) else 'no'
-    gmxpr = ' {}'.format(quest)
-    return gmxpr, result
+    expression = ' {}'.format(quest)
+    return expression, result

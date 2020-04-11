@@ -3,23 +3,19 @@
 import prompt
 
 
-wrong_answer = """'{0}' is wrong answer ;(. Correct answer was '{1}'. Let's try again, {2}!"""
-
-def welcome_user():
-        print("Welcome to the Brain Games!")
-        print()
-        name = prompt.string('May I have your name?')
-        print('Hello, {}!'.format(name))
-        print()
-        return name
-
 def run(name_game):
-    name = welcome_user()
+    wrong_answer = """'{0}' is wrong answer ;(. Correct answer was '{1}'. Let's try again, {2}!"""
+    print("Welcome to the Brain Games!")
+    print()
+    name = prompt.string('May I have your name?')
+    print('Hello, {}!'.format(name))
+    print()
     print(name_game.describer)
+    ROUNDS = 3
 
-    for _try_num in range(0,3):
-        gmxpr, result = name_game.logic_game()
-        print('Question: {gmxpr}'.format(gmxpr=gmxpr))
+    for _try_num in range(0,ROUNDS):
+        expression, result = name_game.logic_game()
+        print('Question: {expression}'.format(expression=expression))
         answer = prompt.string('Your answer: ')
 
         if answer != result:

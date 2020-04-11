@@ -22,6 +22,6 @@ def logic_game():
         progression += element
         counter += 1
 
-    gmxpr = '{}'.format(progression)
+    expression = '{}'.format(progression)
 
-    return gmxpr, result
+    return expression, result
