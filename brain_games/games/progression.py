@@ -3,7 +3,7 @@ from random import randint
 describer = 'What number is missing in the progression?'
 
 
-def logic_game():
+def run_game():
     number1 = randint(1, 99)
     step = randint(1, 99)
     hidden_number = randint(0, 9)

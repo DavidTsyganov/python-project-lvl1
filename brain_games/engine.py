@@ -14,8 +14,8 @@ def run(name_game):
     ROUNDS = 3
 
     for _try_num in range(0,ROUNDS):
-        expression, result = name_game.logic_game()
-        print('Question: {expression}'.format(expression=expression))
+        expression, result = name_game.run_game()
+        print('Question:',expression)
         answer = prompt.string('Your answer: ')
 
         if answer != result:
@@ -23,4 +23,6 @@ def run(name_game):
             break
         print('Correct!')
     else:
-        print('Congratulations, {name}!'.format(name=name))
+        print('Congratulations, ',name, '!')
+
+

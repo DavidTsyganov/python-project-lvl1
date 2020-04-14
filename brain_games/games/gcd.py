@@ -3,7 +3,7 @@ import math, random
 describer = 'Find the greatest common divisor of given numbers.'
 
 
-def logic_game():
+def run_games():
     number1 = random.randint(1, 99)
     number2 = random.randint(1, 99)
     great_div = math.gcd(number1, number2)
