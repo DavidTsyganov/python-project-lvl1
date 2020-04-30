@@ -2,6 +2,8 @@
 
 import prompt
 
+ROUND = 3
+
 
 def run(name_game):
     wrong_answer = """'{0}' is wrong answer ;(. Correct answer was '{1}'. Let's try again, {2}!"""
@@ -11,9 +13,8 @@ def run(name_game):
     print('Hello, {}!'.format(name))
     print()
     print(name_game.DESCRIBER)
-    ROUNDS = 3
 
-    for _try_num in range(0,ROUNDS):
+    for _try_num in range(0,ROUND):
         expression, result = name_game.run_game()
         print('Question:',expression)
         answer = prompt.string('Your answer: ')
@@ -24,6 +25,9 @@ def run(name_game):
         print('Correct!')
     else:
         print('Congratulations, ',name, '!')
+
+
+
 
 
 
