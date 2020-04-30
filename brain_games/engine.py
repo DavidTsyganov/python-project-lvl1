@@ -10,7 +10,7 @@ def run(name_game):
     name = prompt.string('May I have your name?')
     print('Hello, {}!'.format(name))
     print()
-    print(name_game.describer)
+    print(name_game.DESCRIBER)
     ROUNDS = 3
 
     for _try_num in range(0,ROUNDS):
@@ -24,5 +24,6 @@ def run(name_game):
         print('Correct!')
     else:
         print('Congratulations, ',name, '!')
+
 
 

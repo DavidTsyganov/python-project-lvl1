@@ -1,6 +1,6 @@
 from random import randint
 
-describer = 'What number is missing in the progression?'
+DESCRIBER = 'What number is missing in the progression?'
 
 
 def run_game():
@@ -9,8 +9,9 @@ def run_game():
     hidden_number = randint(0, 9)
     counter = 0
     progression = ''
+    PROGRESSION_LENGTH = 10
 
-    while counter < 10:
+    while counter < PROGRESSION_LENGTH:
         curnumber = number1 + (counter * step)
 
         if counter == hidden_number:

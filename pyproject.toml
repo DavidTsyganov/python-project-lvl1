@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Ganeshahere_brain_games"
-version = "0.6.6"
+version = "0.6.7"
 description = "First python course project, pack of warming-up games for your brain"
 authors = ["Ganesha_here <Jamper1488@gmail.com>"]
 packages = [
@@ -27,3 +27,4 @@ flake8 = "^3.7.9"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
