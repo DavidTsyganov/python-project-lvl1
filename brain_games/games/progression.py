@@ -23,6 +23,6 @@ def run_game():
         progression += element
         counter += 1
 
-    expression = '{}'.format(progression)
+    expression = str(progression)
 
     return expression, result
