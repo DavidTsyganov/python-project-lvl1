@@ -4,10 +4,12 @@ DESCRIBER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    divider = 2
-    while number % divider != 0:
-        divider += 1
-    return divider == number
+    if number % 2 == 0:
+        return number == 2
+    d = 3
+    while d ** 2 <= number and number % d != 0:
+        d += 2 
+    return d ** 2 > number
 
 
 def run_game():

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Ganeshahere_brain_games"
-version = "0.6.8"
+version = "0.6.9"
 description = "First python course project, pack of warming-up games for your brain"
 authors = ["Ganesha_here <Jamper1488@gmail.com>"]
 packages = [

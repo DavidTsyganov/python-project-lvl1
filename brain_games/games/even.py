@@ -10,5 +10,5 @@ def is_even(number):
 def run_game():
     number = randint(1,99)
     result = 'yes' if is_even(number) else 'no'
-    expression =str(number)
+    expression = str(number)
     return expression, result

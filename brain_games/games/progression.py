@@ -3,26 +3,26 @@ from random import randint
 DESCRIBER = 'What number is missing in the progression?'
 
 
+PROGRESSION_LENGTH = 10
 def run_game():
     number1 = randint(1, 99)
     step = randint(1, 99)
-    hidden_number = randint(0, 9)
     counter = 0
-    progression = ''
-    PROGRESSION_LENGTH = 10
+    question = ''
+    hidden_number = randint(0, PROGRESSION_LENGTH - 1)
 
     while counter < PROGRESSION_LENGTH:
-        curnumber = number1 + (counter * step)
+        current_number = number1 + (counter * step)
 
         if counter == hidden_number:
             element = '.. '
-            result = str(curnumber)
+            result = str(current_number)
         else:
-            element = str(curnumber) + " "
+            element = str(current_number) + " "
 
-        progression += element
+        question += element
         counter += 1
 
-    expression = str(progression)
+    expression = str(question)
 
     return expression, result
