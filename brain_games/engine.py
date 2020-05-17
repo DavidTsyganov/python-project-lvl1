@@ -10,7 +10,7 @@ def run(name_game):
     print()
     name = prompt.string('May I have your name?')
     while name == 'yes' or name == 'no' or name == 'No' or name == 'Yes' \
-            or name == 'NO' or name == 'nO' or name == 'yES' or name == 'yeS' \ 
+            or name == 'NO' or name == 'nO' or name == 'yES' or name == 'yeS' \
             or name == 'YeS':
         name = prompt.string('Try to input your name correctly')
     print('Hello, {}!'.format(name))
