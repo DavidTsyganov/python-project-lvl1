@@ -13,7 +13,7 @@ def run(name_game):
     print('Hello, {}!'.format(name))
     print()
     print(name_game.DESCRIBER)
-    for _try_num in range(0,ROUNDS):
+    for _try_num in range(0, ROUNDS):
         expression, result = name_game.run_game()
         print('Question:',expression)
         answer = prompt.string('Your answer: ')
