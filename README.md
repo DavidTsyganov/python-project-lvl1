@@ -1,6 +1,6 @@
 # Brain Games #  
 [![Maintainability](https://api.codeclimate.com/v1/badges/7bfe7172314b1aa605af/maintainability)](https://codeclimate.com/github/Ganeshahere/python-project-lvl1/maintainability)
-[![Build Status](https://travis-ci.org/Ganeshahere/python-project-lvl1.svg?branch=master)](https://travis-ci.org/Ganeshahere/python-project-lvl1)
+[![Build Status](https://travis-ci.com/Ganeshahere/python-project-lvl1.svg?branch=master)](https://travis-ci.com/Ganeshahere/python-project-lvl1)
 ## First Hexlet.io Python course project, pack of interesting games for terminal fun, also little warm-up for your brain ##
 ## Installation: ##
     pip install -i https://test.pypi.org/simple/ ganeshahere-brain-games
