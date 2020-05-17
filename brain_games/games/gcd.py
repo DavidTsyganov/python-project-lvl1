@@ -17,5 +17,4 @@ def run_game():
     number2 = randint(1, 100)
     expression = ('{} {}'.format(number1, number2))
     result = str(gcd(number1, number2))
-    return expression, result
-    
+    return expression, result 

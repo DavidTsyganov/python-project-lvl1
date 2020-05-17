@@ -18,11 +18,11 @@ def run(name_game):
     print(name_game.DESCRIBER)
     for _try_num in range(0, ROUNDS):
         expression, result = name_game.run_game()
-        print('Question:',expression)
+        print('Question:', expression)
         answer = prompt.string('Your answer: ')
         if answer != result:
             print(wrong_answer.format(answer, result, name))
             break
         print('Correct!')
     else:
-        print('Congratulations, ',name, '!')
+        print('Congratulations, ', name, '!')
