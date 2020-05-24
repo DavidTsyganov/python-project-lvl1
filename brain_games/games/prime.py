@@ -4,7 +4,7 @@ DESCRIBER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    for num in range(2, int(number ** 0.5) +1):
+    for num in range(2, int(number ** 0.5) + 1):
         if not number % num:
             return False
     return True
