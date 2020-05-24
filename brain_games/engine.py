@@ -6,8 +6,7 @@ ROUNDS = 3
 def run(name_game):
     wrong_answer = """'{0}' is wrong answer ;(. Correct answer was '{1}'.\n
     Let's try again, {2}!"""
-    welcome_message = "Welcome to the Brain Games!"
-    print(welcome_message)
+    print("Welcome to the Brain Games!")
     print()
     name = prompt.string('May I have your name?')
     while name == 'yes' or name == 'no' or name == 'No' or name == 'Yes' \
