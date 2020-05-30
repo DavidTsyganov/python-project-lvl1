@@ -7,7 +7,7 @@ def is_even(number):
     return not number % 2
 
 
-def run_game():
+def make_data_for_game():
     number = randint(1, 99)
     result = 'yes' if is_even(number) else 'no'
     expression = str(number)

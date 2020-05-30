@@ -15,7 +15,7 @@ def is_prime(number):
     return d ** 2 > number
 
 
-def run_game():
+def make_data_for_game():
     number = random.randint(1, 100)
     expression = str(number)
     result = 'yes' if is_prime(number) else 'no'

@@ -12,7 +12,7 @@ def gcd(number1, number2):
     return number1 + number2
 
 
-def run_game():
+def make_data_for_game():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     expression = ('{} {}'.format(number1, number2))

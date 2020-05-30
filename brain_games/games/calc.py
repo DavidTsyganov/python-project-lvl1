@@ -10,7 +10,7 @@ OPERATIONS = (
     )
 
 
-def run_game():
+def make_data_for_game():
     operation_sign, operation = random.choice(OPERATIONS)
     number1 = random.randint(1, 99)
     number2 = random.randint(1, 99)

@@ -4,7 +4,7 @@ DESCRIBER = 'What number is missing in the progression?'
 PROGRESSION_LENGTH = 10
 
 
-def run_game():
+def make_data_for_game():
     number1 = randint(1, 99)
     step = randint(1, 99)
     counter = 0
