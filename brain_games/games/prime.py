@@ -3,7 +3,7 @@ import random
 DESCRIBER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(number):   
+def is_prime(number):
     if number > 0:
         if number % 2 == 0:
             return number == 2
