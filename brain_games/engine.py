@@ -1,6 +1,6 @@
 import prompt
 
-ROUND = 3
+roundsCount = 3
 
 
 def run(game):
@@ -12,12 +12,13 @@ Let's try again, {2}!"""
     print('Hello, {}!'.format(name))
     print()
     print(game.DESCRIBER)
-    for _try_num in range(0, ROUND):
+    for _try_num in range(0, roundsCount):
         expression, result = game.make_data_for_game()
         print('Question:', expression)
         answer = prompt.string('Your answer: ')
         if answer != result:
-            print(wrong_answer.format(answer, result, name))
+            print("""'{0}' is wrong answer ;(. Correct answer was '{1}'.\n
+Let's try again, {2}!""".format(answer, result, name))
             break
         print('Correct!')
     else:
