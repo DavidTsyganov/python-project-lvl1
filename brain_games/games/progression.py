@@ -10,7 +10,7 @@ def make_data_for_game():
     maximum_number = (step * PROGRESSION_LENGTH) + start_number
     progression_index = range(start_number, maximum_number, step)
     result = choice(progression_index)
-    progression = ' '.join([\
+    progression = ' '.join([
         '..' if num == result else str(num) for num in progression_index])
     expression = f'{progression}'
     return expression, result
