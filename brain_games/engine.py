@@ -4,8 +4,6 @@ roundsCount = 3
 
 
 def run(game):
-    #wrong_answer = """'{0}' is wrong answer ;(. Correct answer was '{1}'.\n
-#Let's try again, {2}!"""
     print("Welcome to the Brain Games!")
     print()
     name = prompt.string('May I have your name?')
